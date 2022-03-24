@@ -1,0 +1,79 @@
+@import './../constans.scss';
+
+
+.advice {
+    font-family: 'Manrope';
+    font-style: normal;
+    &__container {
+        background: $dark-grayish-blue;
+        box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+        border-radius: 15px;      
+        color: $light-cyan;
+        position: absolute;
+        width: 293px;
+        height: 315px;
+        left: 32px;
+        top: 154px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $desktop) {            
+            width: 490px;
+            height: 332px;  
+            left: 450px;
+            top: 223px;
+        }
+    }
+
+    &__id {
+        text-transform: uppercase;
+        color: $neon-green;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 4px;
+        padding: 23px;        
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        color: $light-cyan;
+        padding: 0 23px 20px;
+    }
+
+    &__block--divider {
+        position: absolute;
+        bottom: 64px;
+        left: 24px;
+        
+        @media (min-width: $desktop) {            
+            bottom: 81px;
+            left: 48px;
+        }
+    }
+
+    &__next-button {
+        position: absolute;
+        left: 40%;        
+        top: 89%;
+        background: $neon-green;
+        box-shadow: 0px 0px 40px $neon-green;
+        border-radius: 50%;
+        height: 64px;
+        width: 64px;
+
+        @media (min-width: $desktop) {                        
+            left: 238px;
+            top: 350px;
+        }
+
+        &__image {        
+            position: absolute;
+            top: 20px;
+            left: 21px;
+        }
+    }
+}
